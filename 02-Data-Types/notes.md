@@ -1,197 +1,178 @@
-A Data Type tells JavaScript what kind of value a variable holds.
+# Data Types in JavaScript
+
+## What is a Data Type?
+
+A data type defines the type of value stored in a variable.
 
 Example:
+
+```javascript
 let age = 28;
-age contains a Number.
+```
 
-JavaScript has 8 Data Types
-Primitive (7)
-String
-Number
-Boolean
-Undefined
-Null
-BigInt
-Symbol
+Here, `age` stores a Number.
 
-Non-Primitive (1)
-Object
+---
 
-1️⃣ String
-Stores text.
+# Types of Data Types
 
-let name = "Chaitanya";
-console.log(name);
-console.log(typeof name);
+JavaScript has 8 data types.
 
-Output
-Chaitanya
-string
+## Primitive Data Types
 
-2️⃣ Number
-Stores integers and decimals.
+- String
+- Number
+- Boolean
+- Undefined
+- Null
+- BigInt
+- Symbol
 
-let age = 28;
-let salary = 50000.75;
-console.log(typeof age);
-console.log(typeof salary);
+## Non-Primitive Data Type
 
-Output
-number
-number
+- Object
 
-3️⃣ Boolean
-True or False.
+---
 
-let isLoggedIn = true;
-console.log(typeof isLoggedIn);
+# String
 
-Output
-boolean
+Stores text values.
 
-4️⃣ Undefined
-Declared but not assigned.
+```javascript
+const name = "Chaitanya";
+```
 
+---
+
+# Number
+
+Stores integer and decimal values.
+
+```javascript
+const age = 28;
+```
+
+---
+
+# Boolean
+
+Stores true or false.
+
+```javascript
+const isEmployee = true;
+```
+
+---
+
+# Undefined
+
+Variable declared but not assigned.
+
+```javascript
 let city;
-console.log(city);
-console.log(typeof city);
+```
 
-Output
-undefined
-undefined
+---
 
-5️⃣ Null
+# Null
+
 Represents an intentional empty value.
 
+```javascript
 let manager = null;
-console.log(manager);
-console.log(typeof manager);
+```
 
-Output
-null
-object
+---
 
-⭐ Interview Question
-Why does typeof null return "object"?
+# BigInt
 
-Answer:
-This is a well-known historical bug in JavaScript. It has been kept for backward compatibility.
+Stores very large integers.
 
-6️⃣ BigInt
-Used for very large integers.
+```javascript
+const salary = 12345678901234567890n;
+```
 
-const bigNumber = 123456789012345678901234567890n;
-console.log(typeof bigNumber);
+---
 
-Output
-bigint
+# Symbol
 
-7️⃣ Symbol
-Creates unique values.
+Creates unique identifiers.
 
-const id1 = Symbol("id");
-const id2 = Symbol("id");
-console.log(id1 === id2);
+```javascript
+const id = Symbol("id");
+```
 
-Output
-false
-Every Symbol is unique, even if the descriptions match.
+---
 
-8️⃣ Object
-Stores collections of related data.
+# Object
 
+Stores collections of data.
+
+```javascript
 const employee = {
     name: "Chaitanya",
-    company: "APSS Media",
-    experience: "4 Years"
+    company: "APSS Media"
 };
+```
 
-console.log(employee);
-console.log(typeof employee);
+---
 
-Output
-object
+# Primitive vs Non-Primitive
 
-⭐ Interview Question
-Primitive vs Non-Primitive
-Primitive	Object
-Stores value	Stores reference
-Immutable	Mutable
-Compared by value	Compared by reference
+| Primitive | Non-Primitive |
+|------------|---------------|
+| Stored by value | Stored by reference |
+| Immutable | Mutable |
+| Compared by value | Compared by reference |
 
-Example:
+---
 
-let a = 10;
-let b = a;
-b = 20;
+# typeof Operator
 
-console.log(a);
-console.log(b);
-Output
-10
-20
+Used to determine the type of a value.
 
-Now compare with objects:
-
-let emp1 = {
-    name: "Chaitanya"
-};
-let emp2 = emp1;
-emp2.name = "Rahul";
-
-console.log(emp1.name);
-
-Output
-Rahul
-
-Because both variables reference the same object.
-
-⭐ Interview Question
-What is typeof?
-typeof returns the type of a value.
-
-Examples:
+```javascript
 typeof "Hello"
 typeof 100
 typeof true
-typeof undefined
-typeof null
 typeof {}
 typeof []
+```
 
-Expected outputs:
-string
-number
-boolean
-undefined
-object
-object
+---
 
-Follow-up
+# Why does typeof null return object?
 
-Why is an array reported as an object?
-Because arrays are a specialised type of object in JavaScript.
+This is a historical bug in JavaScript that has been kept for backward compatibility.
 
-To check for an array:
-Array.isArray([1,2,3]);
+---
 
-Output:
-true
+# Array
 
-🏢 Real-world Example
+Arrays are objects in JavaScript.
 
-Suppose you're receiving user data from an API.
+Always use:
 
-const user = {
-    name: "Chaitanya",
-    age: 28,
-    isPremium: true,
-    address: null
-};
+```javascript
+Array.isArray(array)
+```
 
-console.log(typeof user.name);
-console.log(typeof user.age);
-console.log(typeof user.isPremium);
-console.log(user.address);
+to check whether a value is an array.
 
-Understanding data types helps you validate API responses and avoid runtime bugs.
+---
+
+# Interview Questions
+
+1. Difference between undefined and null.
+2. Difference between Primitive and Non-Primitive data types.
+3. Why does typeof null return object?
+4. Why does typeof [] return object?
+5. What is the typeof operator?
+
+---
+
+# Best Practices
+
+- Use `typeof` to identify primitive data types.
+- Use `Array.isArray()` to check arrays.
+- Use `null` when you intentionally want an empty value.
