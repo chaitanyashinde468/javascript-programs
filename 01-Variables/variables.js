@@ -24,3 +24,7 @@ console.log(age);
 const company = "APSS Media";
 
 console.log(company);
+
+const apiURL = "/users";
+//API endpoint doesn't change
+console.log(apiURL);
