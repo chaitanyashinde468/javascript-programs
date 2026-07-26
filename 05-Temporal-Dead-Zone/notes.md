@@ -108,3 +108,33 @@ const apiUrl = "/users";
 - Prefer `const` by default.
 - Use `let` when reassignment is needed.
 - Avoid relying on hoisting.
+
+  # Temporal Dead Zone Interview Questions
+
+## Q1. What is TDZ?
+
+The Temporal Dead Zone is the period between entering a scope and initializing a let or const variable.
+
+---
+
+## Q2. Does TDZ apply to var?
+
+No.
+
+---
+
+## Q3. Why does var print undefined?
+
+Because var is hoisted and initialized with undefined.
+
+---
+
+## Q4. Why does let throw ReferenceError?
+
+Because it is hoisted but remains in the Temporal Dead Zone until initialization.
+
+---
+
+## Q5. Which is safer, var or let?
+
+let, because TDZ prevents accidental usage before initialization.
