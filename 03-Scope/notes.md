@@ -41,7 +41,7 @@ Variables declared using `let` and `const` are accessible only inside the block 
 
 ---
 
-## Interview Questions
+## Questions
 
 1. What is Scope?
 2. Difference between Global, Function and Block Scope.
