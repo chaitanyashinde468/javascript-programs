@@ -11,7 +11,10 @@ console.log(city);
 
 /*
 Output
-
+//1st console : 
+ReferenceError:
+Cannot access 'city' before initialization
+//2nd console :
 Pune
 */
 
@@ -23,7 +26,10 @@ console.log(company);
 
 /*
 Output
-
+//1st console : 
+ReferenceError:
+Cannot access 'company' before initialization
+//2nd console :
 APSS Media
 */
 
