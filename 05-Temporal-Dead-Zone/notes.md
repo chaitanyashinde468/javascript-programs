@@ -109,7 +109,7 @@ const apiUrl = "/users";
 - Use `let` when reassignment is needed.
 - Avoid relying on hoisting.
 
-  # Temporal Dead Zone Interview Questions
+  # Temporal Dead Zone Questions
 
 ## Q1. What is TDZ?
 
