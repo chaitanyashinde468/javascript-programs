@@ -161,7 +161,7 @@ to check whether a value is an array.
 
 ---
 
-# Interview Questions
+# Questions
 
 1. Difference between undefined and null.
 2. Difference between Primitive and Non-Primitive data types.
