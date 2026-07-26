@@ -70,7 +70,7 @@ It does **not** apply to `var`.
 
 ---
 
-# Interview Questions
+# Questions
 
 1. What is the Temporal Dead Zone?
 2. Why does TDZ exist?
