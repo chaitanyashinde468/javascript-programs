@@ -4,6 +4,8 @@
  */
 
 // Example 1 - Basic Closure
+// Question 1
+// Create a function that remembers your name
 
 function outer() {
     let name = "Chaitanya";
@@ -23,6 +25,8 @@ Chaitanya
 
 
 // Example 2 - Counter using Closure
+// Question 2
+// Create a counter using closure
 
 function counter() {
     let count = 0;
@@ -47,6 +51,8 @@ Output
 
 
 // Example 3 - Separate Closures
+// Question 3
+// Create two counters and verify they don't share state
 
 const counter1 = counter();
 const counter2 = counter();
@@ -64,6 +70,8 @@ Output
 
 
 // Example 4 - Closure remembers variables
+// Question 4
+// Create a greeting function using closure
 
 function greeting(message) {
     return function (name) {
