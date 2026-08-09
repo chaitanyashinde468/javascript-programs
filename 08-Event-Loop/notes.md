@@ -118,7 +118,7 @@ Timers
 
 ---
 
-# Interview Questions
+# Questions
 
 1. What is Event Loop?
 2. Is JavaScript single-threaded?
