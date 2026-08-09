@@ -317,3 +317,118 @@ Promises are commonly used for:
 - Use `Promise.all()` when independent operations can run concurrently.
 - Use `Promise.allSettled()` when every operation's result is required.
 - Use `Promise.race()` when the first settled operation matters.
+
+# Promises — Questions
+
+## Q1. What is a Promise?
+
+A Promise is an object that represents the eventual completion or failure of an asynchronous operation.
+
+---
+
+## Q2. What are the states of a Promise?
+
+A Promise has three states:
+
+- Pending
+- Fulfilled
+- Rejected
+
+Fulfilled and rejected are collectively called settled states.
+
+---
+
+## Q3. What is the difference between resolve() and reject()?
+
+`resolve()` fulfills a Promise.
+
+`reject()` rejects a Promise.
+
+---
+
+## Q4. What is Promise chaining?
+
+Promise chaining means using multiple `then()` calls where the result of one operation is passed to the next operation.
+
+---
+
+## Q5. What is the difference between then() and catch()?
+
+`then()` handles successful Promise results.
+
+`catch()` handles rejected Promises.
+
+---
+
+## Q6. What does finally() do?
+
+`finally()` executes after a Promise settles, regardless of whether it was fulfilled or rejected.
+
+---
+
+## Q7. Difference between Promise.all() and Promise.allSettled()?
+
+`Promise.all()` rejects as soon as one Promise rejects.
+
+`Promise.allSettled()` waits for every Promise to settle and returns the status of each operation.
+
+---
+
+## Q8. Difference between Promise.all() and Promise.race()?
+
+`Promise.all()` waits for all Promises to fulfill.
+
+`Promise.race()` settles when the first Promise settles.
+
+---
+
+## Q9. What is Promise.any()?
+
+`Promise.any()` fulfills when the first Promise fulfills.
+
+It ignores rejected Promises until all Promises reject.
+
+---
+
+## Q10. Where are Promises used in real applications?
+
+Promises are commonly used for:
+
+- API calls
+- Database operations
+- File operations
+- External API integrations
+- HTTP requests
+- Asynchronous processing
+
+---
+
+## Q11. Where are Promise callbacks executed?
+
+Promise callbacks such as `then()` and `catch()` are handled through the Microtask Queue.
+
+---
+
+## Q12. Which executes first: Promise or setTimeout(..., 0)?
+
+A Promise callback generally executes before a `setTimeout(..., 0)` callback after the current synchronous code completes because Promise callbacks use the Microtask Queue, which is processed before the task/callback queue.
+
+---
+
+## Q13. What happens if one Promise rejects in Promise.all()?
+
+`Promise.all()` rejects when any input Promise rejects.
+
+---
+
+## Q14. Can a Promise change from fulfilled back to pending?
+
+No.
+
+Once a Promise is fulfilled or rejected, its state cannot change again.
+
+---
+
+## Q15. Why are Promises better than deeply nested callbacks?
+
+Promises provide a cleaner structure for handling asynchronous operations, support chaining, and provide centralized error handling.
