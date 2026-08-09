@@ -157,3 +157,10 @@ apply()
 bind()
 
 → Returns a new function
+
+| Method    | Executes Immediately | Arguments            | Returns          |
+| --------- | -------------------- | -------------------- | ---------------- |
+| `call()`  | ✅ Yes                | Individual arguments | Function result  |
+| `apply()` | ✅ Yes                | Array of arguments   | Function result  |
+| `bind()`  | ❌ No                 | Individual arguments | **New function** |
+
