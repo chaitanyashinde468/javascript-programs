@@ -150,3 +150,75 @@ const response = await fetch(url);
 - Use Promise.all() when tasks are independent.
 - Avoid unnecessary sequential awaits.
 - Keep async functions small and readable.
+
+# Async/Await Questions
+
+## Q1 What is async?
+
+The async keyword makes a function return a Promise.
+
+---
+
+## Q2 What is await?
+
+await pauses execution until a Promise settles.
+
+---
+
+## Q3 Can await be used outside async?
+
+No.
+
+await can only be used inside async functions.
+
+---
+
+## Q4 Is async/await better than Promise?
+
+Not better.
+
+It is built on Promises and provides cleaner syntax.
+
+---
+
+## Q5 How do you handle errors in async/await?
+
+Using try/catch.
+
+---
+
+## Q6 What does async function return?
+
+A Promise.
+
+---
+
+## Q7 Can multiple awaits run in parallel?
+
+Not automatically.
+
+Use Promise.all().
+
+---
+
+## Q8 Difference between Promise.all() and multiple awaits?
+
+Multiple awaits are sequential.
+
+Promise.all() runs concurrently.
+
+---
+
+## Q9 What happens if await receives a non-Promise value?
+
+JavaScript wraps it in Promise.resolve().
+
+---
+
+## Q10 Where have you used async/await?
+
+- API calls
+- Database queries
+- External integrations
+- File operations
+- Authentication flows
