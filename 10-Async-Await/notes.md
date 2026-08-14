@@ -151,12 +151,6 @@ const response = await fetch(url);
 - Avoid unnecessary sequential awaits.
 - Keep async functions small and readable.
 
-What is the difference between Promise and Async/Await?
-
-A good answer would be:
-
-Async/Await is built on top of Promises and provides cleaner, more readable syntax for handling asynchronous operations. Under the hood, it still uses Promises.
-
 # Async/Await Questions
 
 ## Q1 What is async?
@@ -228,3 +222,7 @@ JavaScript wraps it in Promise.resolve().
 - External integrations
 - File operations
 - Authentication flows
+
+## Q11 What is the difference between Promise and Async/Await?
+
+Async/Await is built on top of Promises and provides cleaner, more readable syntax for handling asynchronous operations. Under the hood, it still uses Promises.
