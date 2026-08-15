@@ -1,5 +1,5 @@
 # Prototype & Prototype Chain
-
+ 
 ## What is Prototype?
 
 In JavaScript, every object has an internal link to another object called its prototype.
