@@ -2,7 +2,6 @@
  * Topic: Prototype & Prototype Chain
  */
 
-
 /*----------------------------------------------------
 Example 1 : Every Object Has a Prototype
 ----------------------------------------------------*/
