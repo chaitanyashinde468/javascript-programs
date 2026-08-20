@@ -5,10 +5,10 @@ Hoisting is JavaScript's behaviour of moving declarations to the top of their sc
 Important: Only declarations are hoisted, not initialisations.
 --
 Example 1 – var
-
+```
 console.log(name);
 var name = "Chaitanya";
-
+```
 Many people expect an error.
 
 Actual Output
